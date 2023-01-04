@@ -1,0 +1,41 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: bisque;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+div {
+    position: absolute;
+    bottom: 30px;
+    background: rgb(247, 212, 172);
+    font-size: 20px;
+    padding: 10px 15px;
+}
+
+input {
+    width: 60px;
+    padding: 6px;
+    font-size: 18px;
+    background-color: bisque;
+    border: none;
+    text-align: center;
+}
+
+label {
+    margin-right: 10px;
+}
+
+input:focus {
+    outline: none;
+}
