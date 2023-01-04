@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+}
+
+.doubleBanner{
+    position: relative;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+}
+
+/* Left side */
+.leftbar{
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    left: 0;
+    top: 0;
+
+    transition: transform .5s ease-in-out;
+}
+
+.leftbar > div{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+    color: black;
+}
+
+.img-1-left-side{
+    background-color: cyan;
+}
+
+.img-2-left-side{
+    background-color: goldenrod;
+}
+
+.img-3-left-side{
+    background-color: burlywood;
+}
+
+.img-4-left-side{
+    background-color: pink;
+}
+
+.img-5-left-side{
+    background-color: rgb(207, 255, 171);
+}
+
+/* Right side with images */
+.rightbar{
+    position: absolute;
+    width: 75%;
+    height: 100%;
+    right: 0;
+    left: 25%;
+
+    transition: transform .5s ease-in-out;
+}
+
+.rightbar > div{
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.img1{
+    background-image: url(img/img1.jpg);
+}
+.img2{
+    background-image: url(img/img2.jpg);
+}
+.img3{
+    background-image: url(img/img3.jpg);
+}
+.img4{
+    background-image: url(img/img4.jpg);
+}
+.img5{
+    background-image: url(img/img5.jpg);
+}
+
+/* Arrow buttons */
+.arrow-buttons{
+    position: absolute;
+
+    z-index: 100;
+    left: 25%;
+    top: 50%;
+
+}
+
+.arrow-buttons .arrowdown{
+    transform: translateX(-100%);
+    background-color: rgba(128, 128, 128, 0.500);
+    padding: 15px;
+    font-size: 25px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    cursor: pointer;
+}
+
+.arrow-buttons .arrowup{
+    background-color: rgba(128, 128, 128, 0.500);
+    padding: 15px;
+    font-size: 25px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    cursor: pointer;
+}
+
+.arrow-buttons .arrowup:hover, .arrow-buttons .arrowdown:hover{
+    background-color: rgba(128, 128, 128, 0.800);
+}
