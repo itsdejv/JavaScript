@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.first-box{
+    width: 250px;
+    height: 250px;
+    background-color: red;
+}
+
+.second-box{
+    width: 250px;
+    height: 250px;
+    background-color: blue;
+}
+
+.third-box{
+    width: 250px;
+    height: 250px;
+    background-color: green;
+}
